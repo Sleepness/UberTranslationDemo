@@ -17,6 +17,9 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
+            new Sleepness\UberTranslationBundle\SleepnessUberTranslationBundle(),
+            new Sleepness\UberTranslationBundle\Tests\Fixtures\TestApp\TestBundle\TestBundle(), // required for testing environment
+            new Sleepness\UberTranslationBundle\SleepnessUberTranslationAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
