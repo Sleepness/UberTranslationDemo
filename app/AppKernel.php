@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Sleepness\UberTranslationBundle\SleepnessUberTranslationBundle(),
             new Sleepness\UberTranslationBundle\Tests\Fixtures\TestApp\TestBundle\TestBundle(), // required for testing environment
             new Sleepness\UberTranslationAdminBundle\SleepnessUberTranslationAdminBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
