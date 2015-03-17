@@ -1,3 +1,15 @@
 {% block uber_translation_demo_content %}
-
+    <h2>UberTranslationDemo demonstrates the usage of: UberTranslationBundle and UberTranslationAdminBundle</h2>
+    <h3>UberTranslationBundle</h3>
+    <p>Import translations into memcached by console command 'uber:translations:import en,uk TestBundle'</p>
+    <p>Change locale to see the usage of UberTranslationBundle:</p>
+    <a href="{{ path('_welcome', {'_locale': 'uk' }) }}">UK</a>
+    <a href="{{ path('_welcome', {'_locale': 'en' }) }}">EN</a>
+    <ul>
+        <li>{{ 'test.test_value1'|trans }}</li>
+        <li>{{ 'test.test_value2'|trans }}</li>
+    </ul>
+    <h3>UberTranslationAdminBundle</h3>
+    <p>To see the usage of UberTranslationAdminBundle go to admin section:</p>
+    <a href="{{ path('sleepness_translation_dashboard') }}">ADMIN SECTION</a>
 {% endblock %}
