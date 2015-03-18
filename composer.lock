@@ -1288,12 +1288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sleepness/UberTranslationAdminBundle.git",
-                "reference": "4a25a687a344ad781b06ea42c87b000925dc754b"
+                "reference": "714e5aa5eeaa111d338db5f5226c5a89a71cd304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sleepness/UberTranslationAdminBundle/zipball/4a25a687a344ad781b06ea42c87b000925dc754b",
-                "reference": "4a25a687a344ad781b06ea42c87b000925dc754b",
+                "url": "https://api.github.com/repos/Sleepness/UberTranslationAdminBundle/zipball/714e5aa5eeaa111d338db5f5226c5a89a71cd304",
+                "reference": "714e5aa5eeaa111d338db5f5226c5a89a71cd304",
                 "shasum": ""
             },
             "require": {
@@ -1330,7 +1330,7 @@
                 "admin-dashboard",
                 "translation"
             ],
-            "time": "2015-03-17 20:35:21"
+            "time": "2015-03-18 14:53:47"
         },
         {
             "name": "sleepness/uber-translation-bundle",
@@ -1338,12 +1338,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sleepness/UberTranslationBundle.git",
-                "reference": "a96473a95ea250e784e65f3edd0e9a07a138d704"
+                "reference": "11a9455a84e6be81842c56bd86cde3a20bc90960"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sleepness/UberTranslationBundle/zipball/a96473a95ea250e784e65f3edd0e9a07a138d704",
-                "reference": "a96473a95ea250e784e65f3edd0e9a07a138d704",
+                "url": "https://api.github.com/repos/Sleepness/UberTranslationBundle/zipball/11a9455a84e6be81842c56bd86cde3a20bc90960",
+                "reference": "11a9455a84e6be81842c56bd86cde3a20bc90960",
                 "shasum": ""
             },
             "require": {
@@ -1378,7 +1378,7 @@
                 "memcached",
                 "translation"
             ],
-            "time": "2015-03-17 17:01:44"
+            "time": "2015-03-18 14:53:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
