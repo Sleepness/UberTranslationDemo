@@ -8,7 +8,6 @@ class WelcomeController extends Controller
 {
     public function indexAction()
     {
-
         return $this->render('AcmeDemoBundle:Welcome:index.html.twig');
     }
 }
