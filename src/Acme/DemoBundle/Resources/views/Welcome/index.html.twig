@@ -1,19 +1,52 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
 {% block uber_translation_demo_content %}
-    <h2>UberTranslationDemo demonstrates the usage of: UberTranslationBundle and UberTranslationAdminBundle</h2>
-    <h3>UberTranslationBundle</h3>
-    <p>Import translations into Memcached by running console command: "uber:translations:import en,uk TestBundle".</p>
-    <p>
-        Go to <a href="{{ path('sleepness_translation_dashboard') }}">admin section</a> of UberTranslationAdminBundle
-        and change Memcached translation for keys: "test.test_value1", "test.test_value2".
-    </p>
-    <p>Choose locale to see the usage of UberTranslationBundle:</p>
-    <a href="{{ path('_welcome', {'_locale': 'uk' }) }}">UK</a>
-    <a href="{{ path('_welcome', {'_locale': 'en' }) }}">EN</a>
-    <ul>
-        <li>{{ 'test.test_value1'|trans }}</li>
-        <li>{{ 'test.test_value2'|trans }}</li>
-    </ul>
-    <h3>UberTranslationAdminBundle</h3>
-    <p>To see the usage of UberTranslationAdminBundle go to admin section:</p>
-    <a href="{{ path('sleepness_translation_dashboard') }}">ADMIN SECTION</a>
+    <div class="page-header">
+        <h1>UberTranslationDemo</h1>
+        <p>demonstrates the usage of: UberTranslationBundle and UberTranslationAdminBundle</p>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>UberTranslationBundle</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                Import translations into Memcached by running console command:
+                <span class="label label-default">"uber:translations:import en,uk TestBundle"</span>.
+            </p>
+            <p>
+                Go to admin section of UberTranslationAdminBundle and change Memcached translation for keys:
+                <span class="label label-default">"test.test_value1"</span>,
+                <span class="label label-default">"validator.invalid_value1"</span>.
+            </p>
+            <p>
+                Choose locale to see the usage of UberTranslationBundle:
+                <a class="btn btn-default btn-sm" href="{{ path('_welcome', {'_locale': 'uk' }) }}">UK</a>
+                <a class="btn btn-default btn-sm" href="{{ path('_welcome', {'_locale': 'en' }) }}">EN</a>
+            </p>
+            <table class="table">
+                <tr>
+                    <th>Key</th>
+                    <th>Translation</th>
+                </tr>
+                <tr>
+                    <td>"test.test_value1"</td>
+                    <td>{{ 'test.test_value1'|trans }}</td>
+                </tr>
+                <tr>
+                    <td>"validator.invalid_value1"</td>
+                    <td>{{ 'validator.invalid_value1'|trans([], 'validators') }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>UberTranslationAdminBundle</h3>
+        </div>
+        <div class="panel-body">
+            <p>To see the usage of UberTranslationAdminBundle go to admin section:</p>
+            <a class="btn btn-default btn-sm" href="{{ path('sleepness_translation_dashboard') }}">ADMIN SECTION</a>
+        </div>
+    </div>
 {% endblock %}
