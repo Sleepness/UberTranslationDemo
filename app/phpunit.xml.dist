@@ -12,6 +12,8 @@
             <directory>../src/*/*Bundle/Tests</directory>
             <directory>../src/*/Bundle/*Bundle/Tests</directory>
             <directory>../src/*Bundle/Tests</directory>
+            <directory>../vendor/sleepness/uber-translation-admin-bundle/Tests</directory>
+            <directory>../vendor/sleepness/uber-translation-bundle/Tests</directory>
         </testsuite>
     </testsuites>
 
