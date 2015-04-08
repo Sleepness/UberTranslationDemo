@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae7d8dad725867b3e0e563ffb8d3ab31",
+    "hash": "ddf414dd62871688bb3f0bf45aa04c82",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1288,22 +1288,37 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sleepness/UberTranslationAdminBundle.git",
-                "reference": "c62ec1b13081c25f154a7ded6041e41ba81c4dc3"
+                "reference": "49b69026bc935e5716b253aa4630acb80b49be24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sleepness/UberTranslationAdminBundle/zipball/c62ec1b13081c25f154a7ded6041e41ba81c4dc3",
-                "reference": "c62ec1b13081c25f154a7ded6041e41ba81c4dc3",
+                "url": "https://api.github.com/repos/Sleepness/UberTranslationAdminBundle/zipball/49b69026bc935e5716b253aa4630acb80b49be24",
+                "reference": "49b69026bc935e5716b253aa4630acb80b49be24",
                 "shasum": ""
             },
             "require": {
                 "knplabs/knp-paginator-bundle": "~2.4",
                 "php": ">=5.3.2",
-                "sleepness/uber-translation-bundle": "@dev",
+                "sleepness/uber-translation-bundle": "1.0.*@dev",
                 "symfony/framework-bundle": "~2.3",
                 "symfony/twig-bundle": "~2.3"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "symfony/browser-kit": "~2.6",
+                "symfony/console": "~2.6",
+                "symfony/css-selector": "~2.6",
+                "symfony/finder": "~2.6",
+                "symfony/form": "~2.6",
+                "symfony/http-kernel": "~2.6",
+                "symfony/validator": "~2.6"
+            },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Sleepness\\UberTranslationAdminBundle\\": ""
@@ -1330,7 +1345,7 @@
                 "admin-dashboard",
                 "translation"
             ],
-            "time": "2015-03-22 06:42:18"
+            "time": "2015-04-08 21:40:20"
         },
         {
             "name": "sleepness/uber-translation-bundle",
@@ -1338,20 +1353,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sleepness/UberTranslationBundle.git",
-                "reference": "201ffd6008fe496504a724f293b14db878601ef8"
+                "reference": "da1dde7a88d1ac936ae066ac00b28b36650cb147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sleepness/UberTranslationBundle/zipball/201ffd6008fe496504a724f293b14db878601ef8",
-                "reference": "201ffd6008fe496504a724f293b14db878601ef8",
+                "url": "https://api.github.com/repos/Sleepness/UberTranslationBundle/zipball/da1dde7a88d1ac936ae066ac00b28b36650cb147",
+                "reference": "da1dde7a88d1ac936ae066ac00b28b36650cb147",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
+                "php": ">=5.3",
                 "symfony/framework-bundle": "~2.3",
                 "symfony/twig-bundle": "~2.3"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "symfony/console": "~2.6",
+                "symfony/finder": "~2.6"
+            },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Sleepness\\UberTranslationBundle\\": ""
@@ -1378,7 +1403,7 @@
                 "memcached",
                 "translation"
             ],
-            "time": "2015-03-20 15:59:41"
+            "time": "2015-04-08 21:34:31"
         },
         {
             "name": "swiftmailer/swiftmailer",
