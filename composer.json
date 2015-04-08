@@ -19,8 +19,8 @@
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sleepness/uber-translation-bundle": "@dev",
-        "sleepness/uber-translation-admin-bundle": "@dev"
+        "sleepness/uber-translation-bundle": "1.0.*@dev",
+        "sleepness/uber-translation-admin-bundle": "1.0.*@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
